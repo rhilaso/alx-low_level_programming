@@ -16,7 +16,7 @@ int _atoi(char *s)
 	while (s[size] != '\0')
 	{
 		size++;
-										}
+	}
 	while (s[start] < 48 || s[start] > 57)
 	{
 		start++;
@@ -28,13 +28,11 @@ int _atoi(char *s)
 	{
 		end++;
 	}
-
 	for (j = 0; j < start; j++)
 	{
 		if (s[j] == 45)
 		{ negatives++; }
 	}
-
 	for (j = end; j >= start; j--)
 	{
 		number = number + (s[j] - '0') * p;
